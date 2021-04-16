@@ -1,0 +1,29 @@
+{
+  "name": "serverless-read-doc",
+  "version": "0.0.1",
+  "description": "Reading PDF, XLS, XLSX, DOC, DOCX, CSV, TXT files content in NODEJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "STAGE=dev bin/test.js",
+    "crypto": "bin/crypto.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.831.0",
+    "chalk": "^4.1.0",
+    "ftp": "^0.3.10",
+    "lodash": "^4.17.20",
+    "mime": "^2.5.0",
+    "mime-stream": "^2.1.0",
+    "mysql2": "^2.2.5",
+    "officeparser": "^2.2.2",
+    "pdf-parse": "^1.1.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "sequelize": "^6.4.0",
+    "webdav": "^3.6.2",
+    "xlsx": "^0.16.9",
+    "yargs": "^16.2.0"
+  }
+}

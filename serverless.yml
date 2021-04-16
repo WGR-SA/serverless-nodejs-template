@@ -1,0 +1,20 @@
+service: serverless-fct
+
+package:
+  exclude:
+    - node_modules/**
+
+provider:
+  name: aws
+  stage: ${opt:stage,'dev'}
+  runtime: nodejs12.x
+  memorySize: 1024 # optional, in MB, default is 1024
+  timeout: 6 # optional, in seconds, default is 6
+  role: ARN-TO-ADD
+  region: eu-central-1
+  environment:
+    STAGE: ${opt:stage}
+
+functions:
+  read-doc:
+    handler: index.handler
