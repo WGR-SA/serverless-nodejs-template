@@ -19,7 +19,7 @@ sendLog = function()
     cloudwatchlogs.describeLogStreams(params, (err, data) =>
     {
       if (err) dispatch({ type: 'ERROR', error: err })
-      else dispatch(log(data.logStreams.find(logStream => logStream.logStreamName = logStreamName))) // successful response
+      else dispatch(log(data.logStreams.find(logStream => logStream.logStreamName == logStreamName))) // successful response
     })
   }
 },
